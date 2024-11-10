@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMdxeh45Y8fs42bbiFN9zXk8epn0gKAGbEZtv7g" crossorigin="anonymous">
+
+    <title>Resume Builder</title>
+</head>
+<body>
+    <nav class="navbar bg-white">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="navbar-and-toggler">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="/image/circle logo.png" alt="Resume Builder" class="logo">
+                        <span class="navbar-brand-text">Build
+                            <span>Resume.</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="header bg-bright" id="header" >
+        <div class="header-content">
+
+            <h1>Resume Builder</h1>
+            <h2>Free <span>Resume Builder</span> Generate your resume online</h2>
+            <p id="clicks">Create your professional resume in just a few clicks.</p>
+            <button id="getStartedButton" class="button">Get Started</button>
+        
+            <div id="options" class="options-hidden" style="margin-top: 1rem;">
+                <a href="./static.html" class="button">Static Resume</a>
+                <a href="./dynamic.html" class="button">Dynamic Resume</a>
+                <a href="./editable.html" class="button">Editable Resume</a>
+                <a href="./download.html" class="button">Download and Shareable Resume</a>
+            </div>
+            
+           
+          
+        </div>
+    </header>
+    <section class="section">
+        <a href="./static.html">
+
+            <img src="/image/Screenshot (179).png" alt="" class="cv">
+        </a>
+    </section>
+   
+    <div class="section-one">
+        <div class="container">
+            <div class="section-one-content">
+                <div class="section-one-l">
+                    <img src="/image/OIP.jpeg" alt="">
+                </div>
+                <div class="section-one-r text-center">
+                    <h2 class="lg-title">Use the best resume maker as your guide!</h2>
+                    <p class="text">Getting your dream job might seem like an impossible task, but we're here to change that.
+                        Give yourself a real edge with the best online resume maker crafted by experts, enhanced with advanced data, and trusted by millions of professionals worldwide.
+                        
+                        
+                    </p>
+                    <div class="btn-group">
+                        <a href="./dynamic.html" class="button ">Start Now</a>
+                        <a href="#" class="button ">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-two"> 
+        <div class="container">
+            <h2 class="build">Why Use Our Resume Builder?</h2>
+            <div class="section-items"> 
+                <div class="section-item">
+                    <div class="section-item-icon">
+                        <img src="image/1234.svg" alt="" class="first">
+                    </div>
+                    <h5 class="section-item-title">Make a resume that wins interviews!</h5>
+                    <p class="text">Craft a professional story with our resume maker to impress recruiters, hiring managers, and CEOs.</p>
+                </div>
+                <div class="section-item">
+                    <div class="section-item-icon">
+                        <img src="image/shopping-report-illo_page_header-main.svg" alt="">
+                    </div>
+                    <h5 class="section-item-title">Resume writing made easy!</h5>
+                    <p class="text">Resume writing made easy with pre-generated text, designs, and more. Just fill in your details.</p>
+                </div>
+                <div class="section-item">
+                    <div class="section-item-icon">
+                        <img src="image/img_whyadjust_header_main.svg" alt=""/>
+                    </div>
+                    <h5 class="section-item-title">A recruiter-tested CV maker tool</h5>
+                    <p class="text">Our resume builder, with pre-generated content, is tested by experts to make your CV competitive.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: mahamsaif2005@gmail.com</p>
+                <p>Phone: +923128512809</p>
+            </div>
+            <div class="footer-section">
+                <p>&copy; 2024 Maham Saif. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const getStartedButton = document.getElementById("getStartedButton");
+const options = document.getElementById("options");
+
+getStartedButton.addEventListener("click", () => {
+    options.classList.toggle("show"); 
+    if (options.classList.contains("show")) {
+        getStartedButton.textContent = "Close"; 
+    } else {
+        getStartedButton.textContent = "Get Started";
+    }
+});
+
+    </script>
+    
+    
+</body>
+</html>
